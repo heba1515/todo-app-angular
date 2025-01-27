@@ -8,5 +8,5 @@ import { TodoWrapperComponent } from './todo-wrapper/todo-wrapper.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'recipes-app';
+  title = 'todo-app';
 }
