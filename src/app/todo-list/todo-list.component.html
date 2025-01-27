@@ -1,0 +1,19 @@
+<div class="container px-5">
+  <div class="todo-list">
+    <ul>
+      @for(task of tasks; track $index){
+      <li>
+        <div>
+          <input
+          type="checkbox"
+          [checked]="task.completed"
+          (change)="onToggleTask($index)"
+        />
+        <span [class.completed]="task.completed">{{ task.name }}</span>
+        </div>
+        <button (click)="onDeleteTask($index)">Delete</button>
+      </li>
+    }
+    </ul>
+  </div>
+</div>
